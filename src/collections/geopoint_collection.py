@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple
 
 from ee import Feature, FeatureCollection
 
-from .regions_collection import Land
+from .districts_collection import Land
 
 
 class GeoPointCollection:
