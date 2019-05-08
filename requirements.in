@@ -1,7 +1,7 @@
 # GEE dependencies
 oauth2client
 pyOpenSSL >= 0.11
-pyCrypto
+cryptography
 
 # GEE
 earthengine-api
