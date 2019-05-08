@@ -3,13 +3,13 @@ from typing import Any, Dict, List
 
 import ee
 import glom
-import src.utils.logger.json_logger as json_logger
 
-from ..collections import ImageCollection, DistrictsCollection
+from ..collections import DistrictsCollection, ImageCollection
 from ..collections.image_collection import central_europe_filter
 from ..models import Clusterer
 from ..models.regressor import district_predictor
 from ..utils.bands import Bands
+from ..utils.logger import json_logger
 from ..wrappers import ClustererWrapper, CropYieldDataset
 
 BANDS = Bands(

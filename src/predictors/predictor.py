@@ -4,7 +4,7 @@ from typing import Any, Dict, List
 import ee
 import glom
 
-from ..collections import ImageCollection, DistrictsCollection
+from ..collections import DistrictsCollection, ImageCollection
 from ..collections.image_collection import central_europe_filter
 from ..models import Clusterer
 from ..models.regressor import district_predictor

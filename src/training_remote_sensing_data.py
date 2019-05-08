@@ -16,7 +16,9 @@ i = ImageCollection(
 
 tagged_geo_points = GeoPointCollection(Path("datasets/geo_data/clustering_points.csv"))
 
-tagged_collection = i.get_composite().sampleRegions(collection=tagged_geo_points.features(), properties=["type"], scale=50)
+tagged_collection = i.get_composite().sampleRegions(
+    collection=tagged_geo_points.features(), properties=["type"], scale=50
+)
 evaluated_tagged_collection = tagged_collection.getInfo()
 
 json_logger.to_json(
