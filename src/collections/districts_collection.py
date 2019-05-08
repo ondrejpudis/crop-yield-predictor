@@ -32,7 +32,7 @@ REGION_LAND_MAPPING = {
 
 
 @attr.s(auto_attribs=True)
-class Region:
+class District:
     district_name: str
     region_name: str
     area: float
@@ -47,8 +47,8 @@ def combine_geometries(geometries: Generator[str, None, None]) -> ee.Geometry:
     return united_geometry
 
 
-class RegionsCollection:
-    regions: Dict[str, Region] = {}
+class DistrictsCollection:
+    regions: Dict[str, District] = {}
 
     def __init__(self, regions_file_path):
         bratislava, kosice = [], []
@@ -60,7 +60,7 @@ class RegionsCollection:
                 elif row["DistrictName"] in KOSICE_DISTRICTS:
                     kosice.append(row)
                 else:
-                    self.regions[row["DistrictName"]] = Region(
+                    self.regions[row["DistrictName"]] = District(
                         district_name=row["DistrictName"],
                         region_name=row["RegionName"],
                         area=float(row["Area"]),
@@ -68,14 +68,14 @@ class RegionsCollection:
                         land=REGION_LAND_MAPPING[row["RegionName"]],
                     )
 
-        self.regions["Bratislava I-V"] = Region(
+        self.regions["Bratislava I-V"] = District(
             district_name="Bratislava I-V",
             region_name="Bratislavský",
             area=sum([float(r["Area"]) for r in bratislava]),
             geometry=combine_geometries(r["geometry"] for r in bratislava),
             land=Land.Lowland,
         )
-        self.regions["Košice I-IV and Košice - okolie"] = Region(
+        self.regions["Košice I-IV and Košice - okolie"] = District(
             district_name="Košice I-IV and Košice - okolie",
             region_name="Košický",
             area=sum([float(r["Area"]) for r in kosice]),
@@ -83,13 +83,13 @@ class RegionsCollection:
             land=Land.Lowland,
         )
 
-    def filter_districts(self, names: List[str]) -> "RegionsCollection":
+    def filter_districts(self, names: List[str]) -> "DistrictsCollection":
         if names is None:
             return self
         self.regions = {key: value for key, value in self.regions.items() if key in names}
         return self
 
-    def iterate(self, func: Callable[[Region, List[Any]], None]) -> List[Any]:
+    def iterate(self, func: Callable[[District, List[Any]], None]) -> List[Any]:
         return_value: List[Any] = []
         threads: List[threading.Thread] = []
 

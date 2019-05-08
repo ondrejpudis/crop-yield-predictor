@@ -3,14 +3,14 @@ from typing import List
 import ee
 import src.utils.logger.console_logger as console_logger
 
-from ..collections import Region
+from ..collections import District
 from ..utils.retry import retry_api_call
 
 
 def district_predictor(model, args, yield_data, bands):
     @console_logger.console_log
     @retry_api_call(n_times=3)
-    def predict_per_district(element: Region, return_value: List):
+    def predict_per_district(element: District, return_value: List):
         model_instance = Regressor(model, bands, **args)
         model_instance.train(yield_data.training_data(element, bands.names))
         result = model_instance.classify(yield_data.testing_data(element, bands.names)).getInfo()

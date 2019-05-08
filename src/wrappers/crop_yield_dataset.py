@@ -5,7 +5,7 @@ from typing import Dict, List
 import ee
 from sklearn.model_selection import train_test_split
 
-from ..collections import Region
+from ..collections import District
 from .clusterer_wrapper import ClustererWrapper
 
 DISTRICT_REGEX = re.compile("^District of (?P<district_name>.+)")
@@ -32,7 +32,7 @@ class CropYieldDataset:
                 except IndexError:
                     continue
 
-    def _build_feature_collection(self, years: List[int], district: Region, bands: List) -> ee.FeatureCollection:
+    def _build_feature_collection(self, years: List[int], district: District, bands: List) -> ee.FeatureCollection:
         features = []
         for y in years:
             fields_in_year = self.clusterer.get(y, district.land).cluster(district.geometry, scale=500)
@@ -43,10 +43,10 @@ class CropYieldDataset:
             features.append(ee.Feature(None, data))
         return ee.FeatureCollection(features)
 
-    def training_data(self, district: Region, bands: List) -> ee.FeatureCollection:
+    def training_data(self, district: District, bands: List) -> ee.FeatureCollection:
         return self._build_feature_collection(self.training_years, district, bands)
 
-    def testing_data(self, district: Region, bands: List) -> ee.FeatureCollection:
+    def testing_data(self, district: District, bands: List) -> ee.FeatureCollection:
         return self._build_feature_collection(self.testing_years, district, bands)
 
 
@@ -59,7 +59,7 @@ class PredictionCropYieldDataset(CropYieldDataset):
 
         self._read_dataset(crop_data_path, self.training_years)
 
-    def testing_data(self, district: Region, bands: List):
+    def testing_data(self, district: District, bands: List):
         fields_in_year = self.clusterer.get(self.testing_years, district.land).cluster(district.geometry, scale=500)
         data = {band: fields_in_year.aggregate_mean(property=band) for band in bands}
         return ee.FeatureCollection(ee.Feature(None, data))

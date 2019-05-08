@@ -4,7 +4,7 @@ from typing import List
 import glom
 import src.utils.logger.json_logger as json_logger
 
-from .collections import ImageCollection, RegionsCollection
+from .collections import ImageCollection, DistrictsCollection
 from .collections.image_collection import central_europe_filter
 from .models import Clusterer
 from .models.regressor import district_predictor
@@ -31,13 +31,13 @@ def run(
 
     if not json_logger.json_exists(Path(json_file_name)) or force_server:
 
-        region_borders = RegionsCollection(Path("datasets/geo_data/region_borders_parsed.csv"))
+        region_borders = DistrictsCollection(Path("datasets/geo_data/region_borders_parsed.csv"))
 
         clusterer_wrapper = ClustererWrapper(
             build_clusterer_function=lambda y: Clusterer(
                 clusterer,
                 clusterer_args,
-                ImageCollection(BANDS, add_evi_ndvi=True, filter_function=central_europe_filter).filter_date(
+                ImageCollection(BANDS, evi_ndvi=True, filter_function=central_europe_filter).filter_date(
                     f"{y}-01-01", f"{y}-12-31"
                 ),
             ),
