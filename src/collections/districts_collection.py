@@ -1,6 +1,7 @@
 import csv
 from enum import Enum
 import json
+from pathlib import Path
 import sys
 import threading
 from typing import Any, Callable, Dict, Generator, List
@@ -50,10 +51,10 @@ def combine_geometries(geometries: Generator[str, None, None]) -> ee.Geometry:
 class DistrictsCollection:
     regions: Dict[str, District] = {}
 
-    def __init__(self, regions_file_path):
+    def __init__(self, regions_file_path: Path):
         bratislava, kosice = [], []
 
-        with open(regions_file_path, "r") as regions_file:
+        with regions_file_path.open(mode="r") as regions_file:
             for row in csv.DictReader(regions_file):
                 if row["DistrictName"] in BRATISLAVA_DISTRICTS:
                     bratislava.append(row)

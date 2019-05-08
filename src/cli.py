@@ -1,5 +1,6 @@
 from math import sqrt
 from pathlib import Path
+from typing import Any, Dict, Tuple, Union
 
 import click
 import ee
@@ -14,14 +15,14 @@ BANDS = Bands(
     names=["blue", "green", "red", "near_infrared", "shortwave_infrared_1", "shortwave_infrared_2", "evi", "ndvi"],
 )
 
-MODEL_ARGUMENTS = {
+MODEL_ARGUMENTS: Dict[str, Tuple[Union[ee.Clusterer, ee.Classifier], Dict[str, Any]]] = {
     "kmeans": (ee.Clusterer.wekaKMeans, {"nClusters": 4, "init": 2, "distanceFunction": "Manhattan", "seed": 1}),
     "lvq": (ee.Clusterer.wekaLVQ, {"numClusters": 4, "epochs": 10000, "learningRate": 0.05, "normalizeInput": True}),
     "lr": (ee.Classifier.gmoLinearRegression, {"weight1": 0.5, "maxIterations": 200, "smooth": True}),
     "svm": (ee.Classifier.svm, {"svmType": "NU_SVR", "kernelType": "RBF", "gamma": 0.15, "cost": 100, "nu": 0.5}),
 }
 
-YIELD_DATASETS = {
+YIELD_DATASETS: Dict[str, Path] = {
     "cereals": Path("datasets/crop_data/cereals.csv"),
     "potatoes": Path("datasets/crop_data/potatoes.csv"),
 }
@@ -50,7 +51,7 @@ def test(clusterer, predictor, start, end, crop, split, rmse, force_server):
         predictor=predictor_model[0],
         predictor_args=predictor_model[1],
         yield_file=YIELD_DATASETS[crop],
-        json_file_name=f"json/{clusterer}_{predictor}_{start}_{end}_{crop}_{split}.json",
+        json_file_name=Path(f"json/{clusterer}_{predictor}_{start}_{end}_{crop}_{split}.json"),
         force_server=force_server,
     )
     if rmse:
@@ -81,7 +82,7 @@ def predict(clusterer, predictor, year, district, crop, split, force_server):
         predictor=predictor_model[0],
         predictor_args=predictor_model[1],
         yield_file=YIELD_DATASETS[crop],
-        json_file_name=f"json/prediction_{district}_{clusterer}_{predictor}_{year}_{crop}_{split}.json",
+        json_file_name=Path(f"json/prediction_{district}_{clusterer}_{predictor}_{year}_{crop}_{split}.json"),
         districts=district,
         force_server=force_server,
     )

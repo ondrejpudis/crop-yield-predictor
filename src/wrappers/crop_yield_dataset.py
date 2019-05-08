@@ -1,5 +1,6 @@
 import csv
 import re
+from pathlib import Path
 from typing import Dict, List
 
 import ee
@@ -17,23 +18,24 @@ class CropYieldDataset:
     clusterer: ClustererWrapper
     crop_yield_data: Dict = {}
 
-    def __init__(self, years: List[int], clusterer: ClustererWrapper, crop_data_path: str):
+    def __init__(self, years: List[int], clusterer: ClustererWrapper, crop_data_path: Path):
         self.training_years, self.testing_years = train_test_split(years, random_state=1)
         self.clusterer = clusterer
 
         self._read_dataset(crop_data_path, years)
 
-    def _read_dataset(self, path, years):
-        with open(path, "r") as crop_data_source:
-            for r in csv.DictReader(crop_data_source, delimiter=";"):
+    def _read_dataset(self, path: Path, years: List[int]):
+        with path.open(mode="r") as crop_data_source:
+            for row in csv.DictReader(crop_data_source, delimiter=";"):
                 try:
-                    district_name = DISTRICT_REGEX.findall(r["district"])[0]
-                    self.crop_yield_data[district_name] = {y: r[str(y)] for y in years}
+                    district_name = DISTRICT_REGEX.findall(row["district"])[0]
+                    self.crop_yield_data[district_name] = {y: row[str(y)] for y in years}
                 except IndexError:
                     continue
 
     def _build_feature_collection(self, years: List[int], district: District, bands: List) -> ee.FeatureCollection:
         features = []
+
         for y in years:
             fields_in_year = self.clusterer.get(y, district.land).cluster(district.geometry, scale=500)
             data = {band: fields_in_year.aggregate_mean(property=band) for band in bands}
@@ -41,6 +43,7 @@ class CropYieldDataset:
                 continue
             data["yield_value"] = float(self.crop_yield_data[district.district_name][y])
             features.append(ee.Feature(None, data))
+
         return ee.FeatureCollection(features)
 
     def training_data(self, district: District, bands: List) -> ee.FeatureCollection:
@@ -51,15 +54,16 @@ class CropYieldDataset:
 
 
 class PredictionCropYieldDataset(CropYieldDataset):
-    testing_years: int
+    testing_year: int
 
-    def __init__(self, years: List[int], clusterer: ClustererWrapper, crop_data_path: str):
-        self.training_years, self.testing_years = years[:-1], years[-1]
+    def __init__(self, years: List[int], clusterer: ClustererWrapper, crop_data_path: Path):
+        self.training_years, self.testing_year = years[:-1], years[-1]
         self.clusterer = clusterer
 
         self._read_dataset(crop_data_path, self.training_years)
 
-    def testing_data(self, district: District, bands: List):
-        fields_in_year = self.clusterer.get(self.testing_years, district.land).cluster(district.geometry, scale=500)
+    def testing_data(self, district: District, bands: List) -> ee.FeatureCollection:
+        fields_in_year = self.clusterer.get(self.testing_year, district.land).cluster(district.geometry, scale=500)
         data = {band: fields_in_year.aggregate_mean(property=band) for band in bands}
+
         return ee.FeatureCollection(ee.Feature(None, data))
