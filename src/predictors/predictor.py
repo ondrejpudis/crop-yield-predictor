@@ -27,7 +27,7 @@ def run(
     predictor_args,
     yield_file,
     json_file_name: str,
-    force_server: bool
+    force_server: bool,
 ):
 
     if not json_logger.json_exists(Path(json_file_name)) or force_server:

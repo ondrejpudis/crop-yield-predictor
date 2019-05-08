@@ -5,8 +5,8 @@ import click
 import ee
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-from .predictor import run as run_predictor
-from .test_predictor import run as run_test_predictor
+from .predictors.predictor import run as run_predictor
+from .predictors.test_predictor import run as run_test_predictor
 from .utils.bands import Bands
 
 BANDS = Bands(
