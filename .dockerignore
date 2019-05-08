@@ -1,0 +1,11 @@
+**__pycache__**
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+.mypy_cache
+.git
+
+env
+javascript
+text

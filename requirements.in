@@ -1,0 +1,22 @@
+# GEE dependencies
+oauth2client
+pyOpenSSL >= 0.11
+pyCrypto
+
+# GEE
+earthengine-api
+google-api-python-client
+
+# ML libraries
+scikit-learn
+
+# Helper libraries
+attr
+click
+glom
+lxml
+
+# Analysis tools
+jupyter
+matplotlib
+pandas

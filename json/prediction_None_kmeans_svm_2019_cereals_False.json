@@ -1,0 +1,1635 @@
+[
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.684803001876173,
+          "classification": 3.597058841342361,
+          "evi": 0.23471840450218714,
+          "green": 25.306754221388367,
+          "ndvi": 0.2915448202921067,
+          "near_infrared": 44.594746716697934,
+          "red": 24.570356472795496,
+          "shortwave_infrared_1": 39.870544090056285,
+          "shortwave_infrared_2": 23.9812382739212
+        }
+      }
+    ],
+    "district": "P\u00fachov"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.94967741935484,
+          "classification": 4.373928731977698,
+          "evi": 0.29153105530178464,
+          "green": 25.712258064516128,
+          "ndvi": 0.3165052386493452,
+          "near_infrared": 50.53935483870968,
+          "red": 24.31225806451613,
+          "shortwave_infrared_1": 45.251612903225805,
+          "shortwave_infrared_2": 27.61935483870968
+        }
+      }
+    ],
+    "district": "Hlohovec"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.57718120805369,
+          "classification": 4.336798493927435,
+          "evi": 0.2627415198631205,
+          "green": 26.786577181208052,
+          "ndvi": 0.2953704154731443,
+          "near_infrared": 50.448322147651005,
+          "red": 25.887248322147652,
+          "shortwave_infrared_1": 46.19328859060403,
+          "shortwave_infrared_2": 30.57718120805369
+        }
+      }
+    ],
+    "district": "Senec"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.162691652470187,
+          "classification": 4.6672507738531746,
+          "evi": 0.23488726703882407,
+          "green": 23.772572402044293,
+          "ndvi": 0.28905573718922506,
+          "near_infrared": 44.092844974446336,
+          "red": 22.990630323679728,
+          "shortwave_infrared_1": 41.88415672913118,
+          "shortwave_infrared_2": 25.529812606473595
+        }
+      }
+    ],
+    "district": "Partiz\u00e1nske"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.079847908745247,
+          "classification": 3.9033795315448963,
+          "evi": 0.24186815947585852,
+          "green": 23.234980988593154,
+          "ndvi": 0.3052963499645543,
+          "near_infrared": 45.29961977186312,
+          "red": 23.022053231939164,
+          "shortwave_infrared_1": 45.57642585551331,
+          "shortwave_infrared_2": 28.545247148288972
+        }
+      }
+    ],
+    "district": "Pezinok"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.12928759894459,
+          "classification": 4.904158567119322,
+          "evi": 0.2737674948032317,
+          "green": 24.2532981530343,
+          "ndvi": 0.3213878659762462,
+          "near_infrared": 48.23922603342128,
+          "red": 23.100263852242744,
+          "shortwave_infrared_1": 45.59806508355321,
+          "shortwave_infrared_2": 28.033421284080916
+        }
+      }
+    ],
+    "district": "Pie\u0161\u0165any"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.076736672051695,
+          "classification": 4.389546961411521,
+          "evi": 0.2855950244694322,
+          "green": 24.052504038772213,
+          "ndvi": 0.34057085970130796,
+          "near_infrared": 49.01453957996769,
+          "red": 23.02746365105008,
+          "shortwave_infrared_1": 45.0,
+          "shortwave_infrared_2": 27.36025848142165
+        }
+      }
+    ],
+    "district": "Skalica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.446153846153845,
+          "classification": 4.764645080021394,
+          "evi": 0.2504216317933627,
+          "green": 23.94448160535117,
+          "ndvi": 0.3068710319672939,
+          "near_infrared": 45.28829431438127,
+          "red": 23.252842809364548,
+          "shortwave_infrared_1": 41.89163879598662,
+          "shortwave_infrared_2": 25.133110367892975
+        }
+      }
+    ],
+    "district": "B\u00e1novce nad Bebravou"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.32846715328467,
+          "classification": 4.423999369899257,
+          "evi": 0.2414298879277761,
+          "green": 26.580291970802918,
+          "ndvi": 0.26830281075498047,
+          "near_infrared": 47.372262773722625,
+          "red": 25.462773722627738,
+          "shortwave_infrared_1": 45.64744525547445,
+          "shortwave_infrared_2": 30.334306569343067
+        }
+      }
+    ],
+    "district": "Galanta"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.99559902200489,
+          "classification": 4.808798725800847,
+          "evi": 0.3405846035390933,
+          "green": 24.6039119804401,
+          "ndvi": 0.375637612779668,
+          "near_infrared": 56.20831295843521,
+          "red": 23.558435207823962,
+          "shortwave_infrared_1": 47.153056234718825,
+          "shortwave_infrared_2": 28.708557457212713
+        }
+      }
+    ],
+    "district": "Trnava"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.99503546099291,
+          "classification": 4.414098336939447,
+          "evi": 0.24621044348770185,
+          "green": 24.2177304964539,
+          "ndvi": 0.2923638466375728,
+          "near_infrared": 45.168794326241134,
+          "red": 23.547517730496455,
+          "shortwave_infrared_1": 43.07375886524823,
+          "shortwave_infrared_2": 25.826241134751772
+        }
+      }
+    ],
+    "district": "Zlat\u00e9 Moravce"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.57035848047084,
+          "classification": 3.937691253114612,
+          "evi": 0.23796521917783733,
+          "green": 23.239700374531836,
+          "ndvi": 0.30264437935724176,
+          "near_infrared": 43.16425896201177,
+          "red": 22.407704654895667,
+          "shortwave_infrared_1": 43.472445157838415,
+          "shortwave_infrared_2": 26.571963616907436
+        }
+      }
+    ],
+    "district": "Nov\u00e9 Mesto nad V\u00e1hom"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 38.42529989094874,
+          "classification": 3.091701997880787,
+          "evi": 0.22554701005451322,
+          "green": 31.410032715376225,
+          "ndvi": 0.24221911436736973,
+          "near_infrared": 50.43947655398037,
+          "red": 31.683751363140676,
+          "shortwave_infrared_1": 40.274809160305345,
+          "shortwave_infrared_2": 23.91712104689204
+        }
+      }
+    ],
+    "district": "Spi\u0161sk\u00e1 Nov\u00e1 Ves"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 56.48141263940521,
+          "classification": 2.5400763319159023,
+          "evi": 0.19060666439480728,
+          "green": 48.33828996282528,
+          "ndvi": 0.14730552964576357,
+          "near_infrared": 62.295539033457246,
+          "red": 48.18401486988848,
+          "shortwave_infrared_1": 36.026022304832715,
+          "shortwave_infrared_2": 24.490706319702603
+        }
+      }
+    ],
+    "district": "N\u00e1mestovo"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 38.437768240343345,
+          "classification": 2.3020367487358575,
+          "evi": 0.20689041943301936,
+          "green": 31.76824034334764,
+          "ndvi": 0.22908357284611386,
+          "near_infrared": 48.493562231759654,
+          "red": 31.30472103004292,
+          "shortwave_infrared_1": 37.76394849785408,
+          "shortwave_infrared_2": 23.59656652360515
+        }
+      }
+    ],
+    "district": "Kysuck\u00e9 Nov\u00e9 Mesto"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.33152173913044,
+          "classification": 3.703390492006981,
+          "evi": 0.22754831530593622,
+          "green": 25.405434782608694,
+          "ndvi": 0.27938774435416514,
+          "near_infrared": 43.69565217391305,
+          "red": 24.598913043478262,
+          "shortwave_infrared_1": 40.09782608695652,
+          "shortwave_infrared_2": 24.343478260869563
+        }
+      }
+    ],
+    "district": "Ilava"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.690871369294605,
+          "classification": 4.864149219400772,
+          "evi": 0.2589396134789707,
+          "green": 26.33734439834025,
+          "ndvi": 0.2952670236407969,
+          "near_infrared": 48.29087136929461,
+          "red": 24.70829875518672,
+          "shortwave_infrared_1": 45.87510373443983,
+          "shortwave_infrared_2": 30.153112033195022
+        }
+      }
+    ],
+    "district": "Dunajsk\u00e1 Streda"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 34.581272084805654,
+          "classification": 2.99031482454711,
+          "evi": 0.217214042659905,
+          "green": 27.80565371024735,
+          "ndvi": 0.2539672731839831,
+          "near_infrared": 44.55830388692579,
+          "red": 26.81625441696113,
+          "shortwave_infrared_1": 37.265017667844525,
+          "shortwave_infrared_2": 22.8886925795053
+        }
+      }
+    ],
+    "district": "Byt\u010da"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.77291666666667,
+          "classification": 3.0709717728766273,
+          "evi": 0.17580200105954927,
+          "green": 25.188020833333333,
+          "ndvi": 0.2178135531634325,
+          "near_infrared": 38.53489583333333,
+          "red": 24.58125,
+          "shortwave_infrared_1": 40.809375,
+          "shortwave_infrared_2": 25.686458333333334
+        }
+      }
+    ],
+    "district": "Krupina"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 33.1680236861584,
+          "classification": 2.9280610179477202,
+          "evi": 0.211976829843647,
+          "green": 25.774241302738712,
+          "ndvi": 0.2558284080128904,
+          "near_infrared": 41.89711324944486,
+          "red": 24.979274611398964,
+          "shortwave_infrared_1": 39.19467061435974,
+          "shortwave_infrared_2": 23.748334566987417
+        }
+      }
+    ],
+    "district": "\u017diar nad Hronom"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 35.54676258992806,
+          "classification": 2.2690575538229805,
+          "evi": 0.209420797904836,
+          "green": 27.87338129496403,
+          "ndvi": 0.2480401907786191,
+          "near_infrared": 44.40575539568346,
+          "red": 27.843165467625898,
+          "shortwave_infrared_1": 39.4978417266187,
+          "shortwave_infrared_2": 23.936690647482013
+        }
+      }
+    ],
+    "district": "Bansk\u00e1 \u0160tiavnica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 28.36289098086851,
+          "classification": 2.8476172797646946,
+          "evi": 0.2638678912674024,
+          "green": 21.775584573337383,
+          "ndvi": 0.34363165826528513,
+          "near_infrared": 42.34102641967811,
+          "red": 20.133920437291223,
+          "shortwave_infrared_1": 40.41330094139083,
+          "shortwave_infrared_2": 24.29790464621925
+        }
+      }
+    ],
+    "district": "Malacky"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.823830409356724,
+          "classification": 4.210267823728701,
+          "evi": 0.19854792141918098,
+          "green": 24.89985380116959,
+          "ndvi": 0.2545018655340574,
+          "near_infrared": 40.89254385964912,
+          "red": 23.837719298245613,
+          "shortwave_infrared_1": 43.449561403508774,
+          "shortwave_infrared_2": 28.445906432748536
+        }
+      }
+    ],
+    "district": "Bratislava I-V"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 42.093023255813954,
+          "classification": 2.0750527952920734,
+          "evi": 0.1836281810401563,
+          "green": 35.40803382663848,
+          "ndvi": 0.18296903328112096,
+          "near_infrared": 50.32980972515856,
+          "red": 35.3446088794926,
+          "shortwave_infrared_1": 36.90274841437632,
+          "shortwave_infrared_2": 23.431289640591967
+        }
+      }
+    ],
+    "district": "\u010cadca"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 33.37935323383085,
+          "classification": 1.9447925010140563,
+          "evi": 0.2356172949061938,
+          "green": 26.776119402985074,
+          "ndvi": 0.2924029352050738,
+          "near_infrared": 47.885572139303484,
+          "red": 27.43905472636816,
+          "shortwave_infrared_1": 40.47139303482587,
+          "shortwave_infrared_2": 24.20771144278607
+        }
+      }
+    ],
+    "district": "Medzilaborce"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.224489795918366,
+          "classification": 2.3774234183168477,
+          "evi": 0.22786058334032308,
+          "green": 24.841031149301827,
+          "ndvi": 0.28975456069942834,
+          "near_infrared": 43.35338345864662,
+          "red": 24.054779806659507,
+          "shortwave_infrared_1": 39.672395273899035,
+          "shortwave_infrared_2": 23.886143931256715
+        }
+      }
+    ],
+    "district": "Pova\u017esk\u00e1 Bystrica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 34.21762349799733,
+          "classification": 3.2856957228004626,
+          "evi": 0.21094919966707884,
+          "green": 27.853137516688918,
+          "ndvi": 0.24583449826957546,
+          "near_infrared": 45.292389853137514,
+          "red": 27.39919893190921,
+          "shortwave_infrared_1": 39.77703604806408,
+          "shortwave_infrared_2": 25.096128170894527
+        }
+      }
+    ],
+    "district": "Tur\u010dianske Teplice"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.6969111969112,
+          "classification": 3.591256514087767,
+          "evi": 0.2183457726671439,
+          "green": 24.69787644787645,
+          "ndvi": 0.27063324968024915,
+          "near_infrared": 43.66988416988417,
+          "red": 24.40057915057915,
+          "shortwave_infrared_1": 44.15926640926641,
+          "shortwave_infrared_2": 28.64430501930502
+        }
+      }
+    ],
+    "district": "Michalovce"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.675616835994195,
+          "classification": 3.1096093862414964,
+          "evi": 0.22505057897810918,
+          "green": 23.64368650217707,
+          "ndvi": 0.2821477345854628,
+          "near_infrared": 43.38388969521045,
+          "red": 23.310232220609578,
+          "shortwave_infrared_1": 44.984034833091435,
+          "shortwave_infrared_2": 29.085268505079824
+        }
+      }
+    ],
+    "district": "Trebi\u0161ov"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 42.531065088757394,
+          "classification": 2.962526728324118,
+          "evi": 0.2119319471709679,
+          "green": 34.78698224852071,
+          "ndvi": 0.2120439578247251,
+          "near_infrared": 50.417159763313606,
+          "red": 33.874260355029584,
+          "shortwave_infrared_1": 36.87721893491124,
+          "shortwave_infrared_2": 23.55325443786982
+        }
+      }
+    ],
+    "district": "Doln\u00fd Kub\u00edn"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 33.94818081587652,
+          "classification": 3.0169138586022486,
+          "evi": 0.21749393696741917,
+          "green": 26.369349503858874,
+          "ndvi": 0.25142444328475816,
+          "near_infrared": 43.373759647188535,
+          "red": 25.79162072767365,
+          "shortwave_infrared_1": 39.41786108048512,
+          "shortwave_infrared_2": 22.94928335170893
+        }
+      }
+    ],
+    "district": "Polt\u00e1r"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 51.179843614248476,
+          "classification": 3.3979304772751577,
+          "evi": 0.21202535545922613,
+          "green": 42.629887054735015,
+          "ndvi": 0.1761816167110799,
+          "near_infrared": 56.996524761077325,
+          "red": 41.48045178105995,
+          "shortwave_infrared_1": 35.68114682884448,
+          "shortwave_infrared_2": 24.28931364031277
+        }
+      }
+    ],
+    "district": "Ru\u017eomberok"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 28.713991769547324,
+          "classification": 2.71063919431084,
+          "evi": 0.22279618421081712,
+          "green": 22.51440329218107,
+          "ndvi": 0.30265919826618193,
+          "near_infrared": 41.458847736625515,
+          "red": 22.05658436213992,
+          "shortwave_infrared_1": 43.92283950617284,
+          "shortwave_infrared_2": 26.772633744855966
+        }
+      }
+    ],
+    "district": "Myjava"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 38.389295774647884,
+          "classification": 2.8915964634057305,
+          "evi": 0.22404494570321354,
+          "green": 31.7256338028169,
+          "ndvi": 0.2595242396710624,
+          "near_infrared": 51.457464788732395,
+          "red": 32.31830985915493,
+          "shortwave_infrared_1": 39.21802816901408,
+          "shortwave_infrared_2": 24.610704225352112
+        }
+      }
+    ],
+    "district": "Bardejov"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 36.65817023213473,
+          "classification": 3.6441861100995214,
+          "evi": 0.25150523802243424,
+          "green": 30.25762403277196,
+          "ndvi": 0.2938281925287883,
+          "near_infrared": 51.53117888029131,
+          "red": 29.766499772416932,
+          "shortwave_infrared_1": 42.46791078743742,
+          "shortwave_infrared_2": 26.208010923987256
+        }
+      }
+    ],
+    "district": "Senica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 33.09723643807574,
+          "classification": 2.3689508202363463,
+          "evi": 0.23181159099201112,
+          "green": 25.69293756397134,
+          "ndvi": 0.2792011844709195,
+          "near_infrared": 44.04912998976459,
+          "red": 25.142272262026612,
+          "shortwave_infrared_1": 37.25281473899693,
+          "shortwave_infrared_2": 22.72978505629478
+        }
+      }
+    ],
+    "district": "Svidn\u00edk"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.906653901388225,
+          "classification": 4.774969859678324,
+          "evi": 0.29678317738382237,
+          "green": 25.56247008137865,
+          "ndvi": 0.32514696708595486,
+          "near_infrared": 51.082336045955,
+          "red": 24.46577309717568,
+          "shortwave_infrared_1": 43.238870272857824,
+          "shortwave_infrared_2": 25.5404499760651
+        }
+      }
+    ],
+    "district": "Topo\u013e\u010dany"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 36.188137164040775,
+          "classification": 3.053304349928493,
+          "evi": 0.21279454579339507,
+          "green": 29.76737720111214,
+          "ndvi": 0.24150666947872745,
+          "near_infrared": 47.088044485634846,
+          "red": 29.269694161260425,
+          "shortwave_infrared_1": 39.62465245597776,
+          "shortwave_infrared_2": 25.333642261353106
+        }
+      }
+    ],
+    "district": "Martin"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.565217391304348,
+          "classification": 5.02658206710567,
+          "evi": 0.2356106405515988,
+          "green": 24.615942028985508,
+          "ndvi": 0.2649895095306894,
+          "near_infrared": 44.42028985507246,
+          "red": 23.067632850241544,
+          "shortwave_infrared_1": 45.10990338164251,
+          "shortwave_infrared_2": 30.2512077294686
+        }
+      }
+    ],
+    "district": "\u0160a\u013ea"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.61545580749653,
+          "classification": 4.687491215207289,
+          "evi": 0.3097867016555597,
+          "green": 26.020360944007404,
+          "ndvi": 0.32254080397922896,
+          "near_infrared": 52.366959740860715,
+          "red": 24.5552984729292,
+          "shortwave_infrared_1": 43.11105969458584,
+          "shortwave_infrared_2": 26.19944470152707
+        }
+      }
+    ],
+    "district": "Nitra"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 38.294117647058826,
+          "classification": 2.6485841129149765,
+          "evi": 0.23310658997756792,
+          "green": 31.447963800904976,
+          "ndvi": 0.2592746666174306,
+          "near_infrared": 50.01508295625943,
+          "red": 30.852187028657617,
+          "shortwave_infrared_1": 38.09200603318251,
+          "shortwave_infrared_2": 23.942684766214178
+        }
+      }
+    ],
+    "district": "Tvrdo\u0161\u00edn"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.425255338904364,
+          "classification": 2.4953069939999755,
+          "evi": 0.22731301539231624,
+          "green": 23.66573816155989,
+          "ndvi": 0.2952422686197908,
+          "near_infrared": 43.08356545961003,
+          "red": 23.72701949860724,
+          "shortwave_infrared_1": 40.460538532961934,
+          "shortwave_infrared_2": 24.58774373259053
+        }
+      }
+    ],
+    "district": "Stropkov"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.25954738330976,
+          "classification": 3.5414277475112703,
+          "evi": 0.2208336547278118,
+          "green": 24.673267326732674,
+          "ndvi": 0.2797987513584012,
+          "near_infrared": 42.97171145685997,
+          "red": 24.099009900990097,
+          "shortwave_infrared_1": 40.562234794908065,
+          "shortwave_infrared_2": 24.60820367751061
+        }
+      }
+    ],
+    "district": "Prievidza"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 34.37154696132597,
+          "classification": 2.436373671053884,
+          "evi": 0.20957012834758898,
+          "green": 27.848756906077348,
+          "ndvi": 0.251366293002486,
+          "near_infrared": 45.04281767955801,
+          "red": 27.37914364640884,
+          "shortwave_infrared_1": 39.966850828729285,
+          "shortwave_infrared_2": 25.00207182320442
+        }
+      }
+    ],
+    "district": "\u017dilina"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.126787416587227,
+          "classification": 3.3516475151316145,
+          "evi": 0.208325542059588,
+          "green": 23.975532252939306,
+          "ndvi": 0.2660708388613734,
+          "near_infrared": 41.96027963139498,
+          "red": 23.666348903717825,
+          "shortwave_infrared_1": 45.4296155068319,
+          "shortwave_infrared_2": 28.16777883698761
+        }
+      }
+    ],
+    "district": "Ve\u013ek\u00fd Krt\u00ed\u0161"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 39.85432733504713,
+          "classification": 3.1631603431398103,
+          "evi": 0.24991406403543923,
+          "green": 32.711225364181665,
+          "ndvi": 0.26504594257425423,
+          "near_infrared": 52.60325621251071,
+          "red": 32.267352185089976,
+          "shortwave_infrared_1": 37.47215081405313,
+          "shortwave_infrared_2": 22.74121679520137
+        }
+      }
+    ],
+    "district": "Bansk\u00e1 Bystrica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.9457111834962,
+          "classification": 2.9236062480026375,
+          "evi": 0.21741296410154712,
+          "green": 25.36916395222584,
+          "ndvi": 0.26725535772651854,
+          "near_infrared": 41.99457111834962,
+          "red": 24.626492942453854,
+          "shortwave_infrared_1": 39.25732899022801,
+          "shortwave_infrared_2": 23.655808903365905
+        }
+      }
+    ],
+    "district": "\u017darnovica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 38.95752009184845,
+          "classification": 3.2527126754229982,
+          "evi": 0.18696893410978008,
+          "green": 32.89781859931114,
+          "ndvi": 0.21461639310159517,
+          "near_infrared": 50.22962112514352,
+          "red": 33.85189437428243,
+          "shortwave_infrared_1": 39.09873708381171,
+          "shortwave_infrared_2": 24.94833524684271
+        }
+      }
+    ],
+    "district": "Ke\u017emarok"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 62.707680250783696,
+          "classification": 3.7155137489552232,
+          "evi": 0.27385924717022697,
+          "green": 58.86520376175549,
+          "ndvi": 0.21215750275947573,
+          "near_infrared": 79.95924764890282,
+          "red": 57.31896551724138,
+          "shortwave_infrared_1": 36.81974921630094,
+          "shortwave_infrared_2": 24.17554858934169
+        }
+      }
+    ],
+    "district": "Liptovsk\u00fd Mikul\u00e1\u0161"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 54.54152249134948,
+          "classification": 3.049126382459398,
+          "evi": 0.20187828179407064,
+          "green": 49.21280276816609,
+          "ndvi": 0.20619713846383822,
+          "near_infrared": 68.59515570934256,
+          "red": 50.9204152249135,
+          "shortwave_infrared_1": 38.667820069204154,
+          "shortwave_infrared_2": 24.19377162629758
+        }
+      }
+    ],
+    "district": "Levo\u010da"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 65.08297690333619,
+          "classification": 3.05007569487538,
+          "evi": 0.2531293383581964,
+          "green": 62.07442258340462,
+          "ndvi": 0.18564906266141107,
+          "near_infrared": 82.50299401197604,
+          "red": 61.17365269461078,
+          "shortwave_infrared_1": 38.66381522668948,
+          "shortwave_infrared_2": 24.771599657827203
+        }
+      }
+    ],
+    "district": "Poprad"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.60669191919192,
+          "classification": 3.5450385574253755,
+          "evi": 0.2330878809255216,
+          "green": 24.493055555555557,
+          "ndvi": 0.2944390918198747,
+          "near_infrared": 45.19444444444444,
+          "red": 24.575757575757574,
+          "shortwave_infrared_1": 41.791666666666664,
+          "shortwave_infrared_2": 26.428030303030305
+        }
+      }
+    ],
+    "district": "Sobrance"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.591036414565828,
+          "classification": 3.7194739941407997,
+          "evi": 0.23585367826288228,
+          "green": 24.048552754435107,
+          "ndvi": 0.29843152197465705,
+          "near_infrared": 43.859010270774974,
+          "red": 23.514005602240896,
+          "shortwave_infrared_1": 42.314192343604105,
+          "shortwave_infrared_2": 25.49112978524743
+        }
+      }
+    ],
+    "district": "Tren\u010d\u00edn"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.76300197498354,
+          "classification": 2.7601084121500636,
+          "evi": 0.18792175382977258,
+          "green": 24.88413429888084,
+          "ndvi": 0.23418796189752278,
+          "near_infrared": 39.07373271889401,
+          "red": 24.263331138907176,
+          "shortwave_infrared_1": 39.19881500987492,
+          "shortwave_infrared_2": 23.70967741935484
+        }
+      }
+    ],
+    "district": "Rev\u00faca"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 35.050170068027214,
+          "classification": 2.9928208452677296,
+          "evi": 0.20932858580487843,
+          "green": 28.57908163265306,
+          "ndvi": 0.2592936625120509,
+          "near_infrared": 47.33971088435374,
+          "red": 29.340986394557824,
+          "shortwave_infrared_1": 38.34438775510204,
+          "shortwave_infrared_2": 23.69557823129252
+        }
+      }
+    ],
+    "district": "Snina"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.665641476274164,
+          "classification": 3.443924178924322,
+          "evi": 0.21818287687280807,
+          "green": 22.96792618629174,
+          "ndvi": 0.2867220988528237,
+          "near_infrared": 40.962653778558874,
+          "red": 22.60500878734622,
+          "shortwave_infrared_1": 41.1006151142355,
+          "shortwave_infrared_2": 25.701669595782075
+        }
+      }
+    ],
+    "district": "Vranov nad Top\u013eou"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.723534201954397,
+          "classification": 2.4024640210373813,
+          "evi": 0.21246036239763147,
+          "green": 22.868485342019543,
+          "ndvi": 0.28661079081655133,
+          "near_infrared": 40.70521172638436,
+          "red": 22.846905537459282,
+          "shortwave_infrared_1": 40.881107491856675,
+          "shortwave_infrared_2": 25.26669381107492
+        }
+      }
+    ],
+    "district": "Humenn\u00e9"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.578627591136527,
+          "classification": 2.8933374114982704,
+          "evi": 0.18492444448407278,
+          "green": 23.365618298784845,
+          "ndvi": 0.24391215515081333,
+          "near_infrared": 37.81093638313081,
+          "red": 22.79556826304503,
+          "shortwave_infrared_1": 40.27555396711937,
+          "shortwave_infrared_2": 24.066476054324518
+        }
+      }
+    ],
+    "district": "Lu\u010denec"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 36.27972709551657,
+          "classification": 2.933115343638148,
+          "evi": 0.2231874126316669,
+          "green": 29.4770955165692,
+          "ndvi": 0.27361421662536073,
+          "near_infrared": 48.72953216374269,
+          "red": 29.80506822612086,
+          "shortwave_infrared_1": 40.870370370370374,
+          "shortwave_infrared_2": 25.90253411306043
+        }
+      }
+    ],
+    "district": "Pre\u0161ov"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 33.501461988304094,
+          "classification": 2.823311404292037,
+          "evi": 0.22146610150214593,
+          "green": 26.514619883040936,
+          "ndvi": 0.2608882716056286,
+          "near_infrared": 44.28654970760234,
+          "red": 26.045321637426902,
+          "shortwave_infrared_1": 40.01900584795322,
+          "shortwave_infrared_2": 24.137426900584796
+        }
+      }
+    ],
+    "district": "Detva"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 29.900400534045392,
+          "classification": 4.333674486826555,
+          "evi": 0.2943700481907674,
+          "green": 24.2977303070761,
+          "ndvi": 0.3312943394463733,
+          "near_infrared": 50.00133511348464,
+          "red": 22.839519359145527,
+          "shortwave_infrared_1": 46.46995994659546,
+          "shortwave_infrared_2": 29.62750333778371
+        }
+      }
+    ],
+    "district": "Nov\u00e9 Z\u00e1mky"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 36.462724935732645,
+          "classification": 3.312656378118132,
+          "evi": 0.20362006742815983,
+          "green": 28.58611825192802,
+          "ndvi": 0.2307901425540907,
+          "near_infrared": 44.32699228791774,
+          "red": 28.3706940874036,
+          "shortwave_infrared_1": 38.77994858611825,
+          "shortwave_infrared_2": 23.310025706940873
+        }
+      }
+    ],
+    "district": "Zvolen"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.49292371418709,
+          "classification": 4.393191205311261,
+          "evi": 0.23511748694859813,
+          "green": 24.705212288574387,
+          "ndvi": 0.27415171197062943,
+          "near_infrared": 43.63030721435968,
+          "red": 22.81360027614774,
+          "shortwave_infrared_1": 44.69244045564377,
+          "shortwave_infrared_2": 29.923023817742493
+        }
+      }
+    ],
+    "district": "Kom\u00e1rno"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 51.65361803084223,
+          "classification": 2.3395593389337748,
+          "evi": 0.18215089570711443,
+          "green": 46.37366548042704,
+          "ndvi": 0.21569782399438756,
+          "near_infrared": 65.27758007117438,
+          "red": 48.07947805456702,
+          "shortwave_infrared_1": 38.12811387900356,
+          "shortwave_infrared_2": 25.175563463819692
+        }
+      }
+    ],
+    "district": "Star\u00e1 \u013dubov\u0148a"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 34.19944156362186,
+          "classification": 2.397166787988774,
+          "evi": 0.20083187005258235,
+          "green": 26.69206222576785,
+          "ndvi": 0.2433389477731937,
+          "near_infrared": 42.74112485041883,
+          "red": 26.497008376545672,
+          "shortwave_infrared_1": 39.95971280414838,
+          "shortwave_infrared_2": 23.568807339449542
+        }
+      }
+    ],
+    "district": "Ro\u017e\u0148ava"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 65.75409836065573,
+          "classification": 2.6960023269904316,
+          "evi": 0.2173240431982504,
+          "green": 60.08196721311475,
+          "ndvi": 0.19987413499867251,
+          "near_infrared": 81.81010928961749,
+          "red": 62.81693989071038,
+          "shortwave_infrared_1": 38.62431693989071,
+          "shortwave_infrared_2": 25.32377049180328
+        }
+      }
+    ],
+    "district": "Sabinov"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 53.881472957422325,
+          "classification": 2.928071837715871,
+          "evi": 0.3247573205123904,
+          "green": 50.36248561565017,
+          "ndvi": 0.2996050410628559,
+          "near_infrared": 76.55811277330265,
+          "red": 48.914844649021866,
+          "shortwave_infrared_1": 36.77905638665133,
+          "shortwave_infrared_2": 22.164556962025316
+        }
+      }
+    ],
+    "district": "Brezno"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 43.17629179331307,
+          "classification": 2.0992129370117656,
+          "evi": 0.26926216209976894,
+          "green": 36.037993920972646,
+          "ndvi": 0.27730348095082674,
+          "near_infrared": 59.37386018237082,
+          "red": 36.6063829787234,
+          "shortwave_infrared_1": 37.43920972644377,
+          "shortwave_infrared_2": 21.810030395136778
+        }
+      }
+    ],
+    "district": "Gelnica"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 30.896356783919597,
+          "classification": 3.5654274231217062,
+          "evi": 0.21373113363374427,
+          "green": 23.445979899497488,
+          "ndvi": 0.27230882656879857,
+          "near_infrared": 40.516959798994975,
+          "red": 22.985552763819097,
+          "shortwave_infrared_1": 39.75209380234506,
+          "shortwave_infrared_2": 24.791666666666668
+        }
+      }
+    ],
+    "district": "Ko\u0161ice I-IV and Ko\u0161ice - okolie"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 32.18997035573123,
+          "classification": 3.2896252535987403,
+          "evi": 0.19186256958967016,
+          "green": 24.622529644268774,
+          "ndvi": 0.2396440199625093,
+          "near_infrared": 39.55286561264822,
+          "red": 24.139081027667984,
+          "shortwave_infrared_1": 39.01012845849802,
+          "shortwave_infrared_2": 23.074851778656125
+        }
+      }
+    ],
+    "district": "Rimavsk\u00e1 Sobota"
+  },
+  {
+    "type": "FeatureCollection",
+    "columns": {},
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "id": "0",
+        "properties": {
+          "blue": 31.19102861562258,
+          "classification": 4.248696002847507,
+          "evi": 0.28306025854194644,
+          "green": 25.08430007733952,
+          "ndvi": 0.3160705071213466,
+          "near_infrared": 49.629737045630314,
+          "red": 23.996519721577727,
+          "shortwave_infrared_1": 45.38186388244393,
+          "shortwave_infrared_2": 28.59725444702243
+        }
+      }
+    ],
+    "district": "Levice"
+  }
+]
