@@ -3,7 +3,7 @@ from enum import Enum
 import json
 import sys
 import threading
-from typing import Callable, Dict, List
+from typing import Any, Callable, Dict, Generator, List
 
 import attr
 import ee
@@ -40,7 +40,7 @@ class Region:
     land: Land
 
 
-def combine_geometries(geometries):
+def combine_geometries(geometries: Generator[str, None, None]) -> ee.Geometry:
     united_geometry = ee.Geometry(json.loads(next(geometries)))
     for geo in geometries:
         united_geometry = united_geometry.union(ee.Geometry(json.loads(geo)))
@@ -52,20 +52,22 @@ class RegionsCollection:
 
     def __init__(self, regions_file_path):
         bratislava, kosice = [], []
+
         with open(regions_file_path, "r") as regions_file:
-            for r in csv.DictReader(regions_file):
-                if r["DistrictName"] in BRATISLAVA_DISTRICTS:
-                    bratislava.append(r)
-                elif r["DistrictName"] in KOSICE_DISTRICTS:
-                    kosice.append(r)
+            for row in csv.DictReader(regions_file):
+                if row["DistrictName"] in BRATISLAVA_DISTRICTS:
+                    bratislava.append(row)
+                elif row["DistrictName"] in KOSICE_DISTRICTS:
+                    kosice.append(row)
                 else:
-                    self.regions[r["DistrictName"]] = Region(
-                        district_name=r["DistrictName"],
-                        region_name=r["RegionName"],
-                        area=float(r["Area"]),
-                        geometry=ee.Geometry(json.loads(r["geometry"])),
-                        land=REGION_LAND_MAPPING[r["RegionName"]],
+                    self.regions[row["DistrictName"]] = Region(
+                        district_name=row["DistrictName"],
+                        region_name=row["RegionName"],
+                        area=float(row["Area"]),
+                        geometry=ee.Geometry(json.loads(row["geometry"])),
+                        land=REGION_LAND_MAPPING[row["RegionName"]],
                     )
+
         self.regions["Bratislava I-V"] = Region(
             district_name="Bratislava I-V",
             region_name="Bratislavský",
@@ -81,17 +83,22 @@ class RegionsCollection:
             land=Land.Lowland,
         )
 
-    def filter_districts(self, names: List) -> "RegionsCollection":
+    def filter_districts(self, names: List[str]) -> "RegionsCollection":
         if names is None:
             return self
         self.regions = {key: value for key, value in self.regions.items() if key in names}
         return self
 
-    def iterate(self, func: Callable) -> List:
-        return_value, threads = [], []
+    def iterate(self, func: Callable[[Region, List[Any]], None]) -> List[Any]:
+        return_value: List[Any] = []
+        threads: List[threading.Thread] = []
+
         for region in self.regions.values():
-            t = threading.Thread(target=func, args=(region, return_value))
-            t.start()
-            threads.append(t)
-        [t.join() for t in threads]
+            new_thread = threading.Thread(target=func, args=(region, return_value))
+            new_thread.start()
+            threads.append(new_thread)
+
+        for running_thread in threads:
+            running_thread.join()
+
         return return_value

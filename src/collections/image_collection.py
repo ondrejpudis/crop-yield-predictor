@@ -5,7 +5,7 @@ import ee
 from ..utils import Bands
 
 
-def central_europe_filter(collection: ee.ImageCollection):
+def central_europe_filter(collection: ee.ImageCollection) -> ee.ImageCollection:
     return collection.filter(
         ee.Filter.And(
             ee.Filter.gte("WRS_PATH", 186),
@@ -30,12 +30,12 @@ class ImageCollection:
     bands: Bands
     evi_ndvi: bool
 
-    def __init__(self, bands: Bands, add_evi_ndvi: bool = False, filter_function: Optional[Callable] = None):
+    def __init__(self, bands: Bands, evi_ndvi: bool = False, filter_function: Optional[Callable] = None):
         self.collection = ee.ImageCollection("LANDSAT/LE07/C01/T1")
         if filter_function:
             self.collection = filter_function(self.collection)
         self.bands = bands
-        self.evi_ndvi = add_evi_ndvi
+        self.evi_ndvi = evi_ndvi
 
     def get_composite(self) -> ee.Image:
         composite = ee.Algorithms.Landsat.simpleComposite(collection=self.collection)
@@ -46,6 +46,6 @@ class ImageCollection:
             composite = composite.addBands(evi_ndvi_composite.select(["nd", "B4_1"]))
         return composite.select(self.bands.values).rename(self.bands.names)
 
-    def filter_date(self, date_from: str, date_to: str):
+    def filter_date(self, date_from: str, date_to: str) -> "ImageCollection":
         self.collection = self.collection.filterDate(date_from, date_to)
         return self

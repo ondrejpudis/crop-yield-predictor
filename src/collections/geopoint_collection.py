@@ -12,7 +12,8 @@ class GeoPointCollection:
 
     def __init__(self, source_file_name: str):
         with open(source_file_name, "r") as source_file:
-            [self.feature_dict[r["land"]].append(Feature(*self._process_row(r))) for r in csv.DictReader(source_file)]
+            for row in csv.DictReader(source_file):
+                self.feature_dict[row["land"]].append(Feature(*self._process_row(row)))
 
     @staticmethod
     def _process_row(row: dict) -> Tuple:
