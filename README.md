@@ -39,18 +39,23 @@ Before starting this approach, make sure the following requirements are met:
 - `gcc` compiler
 
 Start by create a new local environment in the project's root directory:
+
 - `python3 -m venv env --symlinks`
 
 Enter this environment:
+
 - `source env/bin/activate`
 
 Install all the requirements: 
+
 - `pip install -r requirements.txt`
 
 After the installation, you have to authenticate yourself to the Google Earth Engine service:
+
 - `earthengine authenticate`
 
 To install the project's commands to your terminal:
+
 - `pip install -e .`
 
 ## Command-line interface
@@ -98,12 +103,15 @@ This section describes the directories in the project.
 The project ships with code used for creating the graphs used in the text.
 
 If you desire to inspect them, you have to install `sklearn-lvq` package:
+
 - `pip install sklearn-lvq`
 
 If you use a local environment, just enter the `jupyter` directory and run:
+
 - `jupyter notebook`
 
 For running `jupyter` from within the Docker container and access it using browser you need to map `8888` port by creating a new container (see Installation). Then, enter the `jupyter` directory and run:
+
 - `jupyter notebook --ip=0.0.0.0 --no-browser --allow-root`
 
 Afterwards, you can load `localhost:8888` and log in with the token specified in the terminal.
