@@ -5,10 +5,14 @@ import attr
 
 @attr.s(auto_attribs=True)
 class Bands:
+    """Stores the lists of bands and their mapped names."""
+
     values: List[str]
     names: List[str]
 
-    def add(self, **new_bands):
-        for name, value in new_bands.items():
-            self.values.append(value)
-            self.names.append(name)
+
+# Default band values and their word equivalents
+BANDS = Bands(
+    values=["B1", "B2", "B3", "B4", "B5", "B7", "B4_1", "nd"],
+    names=["blue", "green", "red", "near_infrared", "shortwave_infrared_1", "shortwave_infrared_2", "evi", "ndvi"],
+)

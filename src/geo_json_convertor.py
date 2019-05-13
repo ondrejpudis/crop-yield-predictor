@@ -1,3 +1,5 @@
+"""Convert an XML geometry to GeoJSON."""
+
 import csv
 import json
 from pathlib import Path

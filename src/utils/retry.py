@@ -7,6 +7,8 @@ from .logger.console_logger import LOGGER
 
 
 def retry_api_call(n_times: int, sleep_time: float = 5.0):
+    """Repeat the call n times."""
+
     def inner(func):
         @wraps(func)
         def closure(*args, **kwargs):

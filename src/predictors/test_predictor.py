@@ -8,14 +8,9 @@ from ..collections import DistrictsCollection, ImageCollection
 from ..collections.image_collection import central_europe_filter
 from ..models import Clusterer
 from ..models.regressor import district_predictor
-from ..utils.bands import Bands
+from ..utils.bands import BANDS
 from ..utils.logger import json_logger
 from ..wrappers import ClustererWrapper, CropYieldDataset
-
-BANDS = Bands(
-    values=["B1", "B2", "B3", "B4", "B5", "B7", "B4_1", "nd"],
-    names=["blue", "green", "red", "near_infrared", "shortwave_infrared_1", "shortwave_infrared_2", "evi", "ndvi"],
-)
 
 
 def run(
@@ -29,7 +24,6 @@ def run(
     json_file_name: Path,
     force_server: bool,
 ):
-
     if not json_logger.json_exists(json_file_name) or force_server:
 
         region_borders = DistrictsCollection(Path("datasets/geo_data/region_borders_parsed.csv"))
@@ -55,6 +49,7 @@ def run(
 
         result = json_logger.from_json(json_file_name)
 
+    # simplify the result to a list of dictionaries of predicted value and target value
     simplified = glom.glom(
         result, [{"prediction": "features.0.properties.classification", "correct": "features.0.properties.yield_value"}]
     )

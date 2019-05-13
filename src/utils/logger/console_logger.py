@@ -1,7 +1,8 @@
 from logging import Formatter, getLevelName, getLogger, StreamHandler
 
 
-def get_logger():
+def _get_logger():
+    """Set the logger behaviour."""
     logger = getLogger()
     logger.setLevel(getLevelName("INFO"))
 
@@ -13,4 +14,4 @@ def get_logger():
     return logger
 
 
-LOGGER = get_logger()
+LOGGER = _get_logger()

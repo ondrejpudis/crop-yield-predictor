@@ -38,6 +38,10 @@ class ImageCollection:
         self.evi_ndvi = evi_ndvi
 
     def get_composite(self) -> ee.Image:
+        """Create a new composite from the collection.
+
+        Rename the bands according to the Bands objects passed during initialisation.
+        """
         composite = ee.Algorithms.Landsat.simpleComposite(collection=self.collection)
         if self.evi_ndvi:
             evi_ndvi_composite = add_evi_ndvi(
