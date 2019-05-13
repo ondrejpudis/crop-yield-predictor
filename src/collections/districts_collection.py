@@ -9,6 +9,7 @@ from typing import Any, Callable, Dict, Generator, List
 import attr
 import ee
 
+# allow higher size of CSV fields (because of the geometry field)
 csv.field_size_limit(sys.maxsize)
 
 BRATISLAVA_DISTRICTS = ["Bratislava I", "Bratislava II", "Bratislava III", "Bratislava IV", "Bratislava V"]

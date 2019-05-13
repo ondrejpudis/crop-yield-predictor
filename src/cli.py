@@ -1,3 +1,5 @@
+"""CLI interface commands."""
+
 from math import sqrt
 from pathlib import Path
 from typing import Any, Dict, Tuple, Union
@@ -8,12 +10,6 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 from .predictors.predictor import run as run_predictor
 from .predictors.test_predictor import run as run_test_predictor
-from .utils.bands import Bands
-
-BANDS = Bands(
-    values=["B1", "B2", "B3", "B4", "B5", "B7", "near_infrared_1", "near_infrared_2"],
-    names=["blue", "green", "red", "near_infrared", "shortwave_infrared_1", "shortwave_infrared_2", "evi", "ndvi"],
-)
 
 MODEL_ARGUMENTS: Dict[str, Tuple[Union[ee.Clusterer, ee.Classifier], Dict[str, Any]]] = {
     "kmeans": (ee.Clusterer.wekaKMeans, {"nClusters": 4, "init": 2, "distanceFunction": "Manhattan", "seed": 1}),

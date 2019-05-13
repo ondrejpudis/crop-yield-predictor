@@ -12,6 +12,8 @@ TRAINING_BANDS = ["shortwave_infrared_1", "shortwave_infrared_2", "evi", "ndvi"]
 
 @attr.s(auto_attribs=True)
 class ClustererWrapper:
+    """Handles creating and returning a clusterer for given year and land."""
+
     build_function: Callable[[int], Clusterer]
     lowland_highland_split: bool
 
@@ -27,11 +29,17 @@ class ClustererWrapper:
             return self._get_by_land(year, district_land)
 
     def _get_regular(self, year: int) -> Clusterer:
+        """Get a clusterer based on the year.
+
+        If a clusterer does not exist, create and train it and store for future use. This saves some time because we
+        don't need to build the object all over again.
+        """
         if year not in self.year_clusterers:
             self.year_clusterers[year] = self.build_function(year).train(self.geo_points.features(), TRAINING_BANDS)
         return self.year_clusterers[year]
 
     def _get_by_land(self, year: int, land: Land) -> Clusterer:
+        """Get a clusterer based on the year and type of the land."""
         if year not in self.land_clusterers:
             self.land_clusterers[year] = {
                 land: self.build_function(year).train(self.geo_points.features(land), TRAINING_BANDS)
