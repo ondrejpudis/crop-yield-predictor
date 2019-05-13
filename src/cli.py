@@ -28,7 +28,7 @@ YIELD_DATASETS: Dict[str, Path] = {
 }
 
 
-@click.command()
+@click.command(help="Test the models and get Mean Absolute or Root Mean Squared Errors.")
 @click.option("-c", "clusterer", required=True, type=click.Choice(["kmeans", "lvq"]), help="Clustering algorithm.")
 @click.option("-p", "predictor", required=True, type=click.Choice(["lr", "svm"]), help="Prediction algorithm.")
 @click.option("--start", default=1999, type=click.IntRange(1999, 2017), help="Year to start in.")
@@ -59,7 +59,7 @@ def test(clusterer, predictor, start, end, crop, split, rmse, force_server):
     print("MAE:", mean_absolute_error([g["correct"] for g in result], [g["prediction"] for g in result]))
 
 
-@click.command()
+@click.command(help="Predict a yield for a specified year for either a district or the whole republic.")
 @click.option("-c", "clusterer", required=True, type=click.Choice(["kmeans", "lvq"]), help="Clustering algorithm.")
 @click.option("-p", "predictor", required=True, type=click.Choice(["lr", "svm"]), help="Prediction algorithm.")
 @click.option("--year", default=2019, type=click.IntRange(1999, 2019), help="A year to make the prediction for.")
